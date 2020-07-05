@@ -6,9 +6,9 @@ public class ListOfStringsStartWithA{
            
           List<String> result=l.stream() 
                         .filter(s->s.startsWith("a"))
-                       // .filter(s->s.length()==3)
+                        .filter(s->s.length()==3)
                         .collect(Collectors.toList());
-         System.out.print("List of Strings starting with a:"+result);
+         System.out.print("List of Strings having exactly 3 letters and starting with a: "+result);
        }
     
      public static void main(String []args){
@@ -19,7 +19,7 @@ public class ListOfStringsStartWithA{
  		strlist.add("ant");
  		strlist.add("an");
  		strlist.add("pencil");
- 		System.out.println("Original list:"+strlist);
+ 		System.out.println("Original list: "+strlist);
         search(strlist);
      }
 }
